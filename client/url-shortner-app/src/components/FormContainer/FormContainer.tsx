@@ -41,14 +41,12 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col sm:flex-row items-center">
               <div className="relative w-full">
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-800">
-                  urlshortener.link /
-                </div>
+                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-800"></div>
                 <input
                   type="text"
                   placeholder="Add your link"
                   required
-                  className="block w-full p-4 pl-16 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
+                  className="block w-full p-4 pl-5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
                   value={fullUrl}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     setFullUrl(e.target.value)
