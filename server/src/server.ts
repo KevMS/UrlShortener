@@ -12,7 +12,12 @@ const port = process.env.PORT || 5001;
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(
+  cors({
+    origin: "https://url-shortener-iota-taupe.vercel.app",
+    credentials: true,
+  })
+);
 
 //Routes
 app.use("/api/", shortUrl);
