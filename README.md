@@ -13,7 +13,7 @@ URL Shortener is a web application that allows users to shorten long URLs into c
 
 ## Technologies Used
 
-- **Frontend:** React, Vite
-- **Backend:** Node.js, Express (if applicable)
-- **Database:** MongoDB (if applicable)
+- **Frontend:** React, Vite, TypeScript
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
 - **Styling:** Tailwind CSS
